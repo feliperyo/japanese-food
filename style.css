@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(33, 33, 33);
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    text-align: center;
+    align-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main h1 {
+    font-size: 4rem;
+    line-height: 1.2em;
+    color: #fff;
+
+    span {
+        color: #ff5563;
+    }
+}
+
+main p {
+    font-size: 1.25rem;
+    margin-bottom: 4.5rem;
+    color: #fff;
+}
+
+main a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5563;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+
+    transition: background-color 300ms;
+}
+
+main a:hover {
+    background-color: #e63745;
+}
