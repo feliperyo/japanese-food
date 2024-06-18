@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./output.css">
 
     <title>Cardápio Japanese Food</title>
@@ -31,6 +35,178 @@
 
         </div>
     </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nossos pratos</h2>
+
+    <section id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2">
+                <img src="./assets/sushi.jpg" alt="sushi"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Sushi</p>
+                    <p class="text-sm">Feito com arroz temperado com molho de vinagre, açúcar e sal, combinado com peixe
+                        ou fruto do
+                        mar, vegetais ou ovo.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$28.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sushi" data-price="28.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/hot-roll.jpg" alt="hot roll"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Hot Roll</p>
+                    <p class="text-sm">O hot roll é o sushi empanado, feito com peixe salmão ou atum, enrolados com
+                        arroz em nori.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$32.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hot Roll"
+                            data-price="32.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/yakissoba.jpg" alt="yakissoba"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Yakissoba</p>
+                    <p class="text-sm">Macarrão, preparado em um refogado de carnes e legumes, em um molho denso e
+                        concentrado com tons adocicados.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$37.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Yakissoba"
+                            data-price="37.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/udon.jpg" alt="udon"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Udon</p>
+                    <p class="text-sm">Macarrão tipo Udon coberto com cebolinha, ovo cozido e camarão na sopa
+                        quente.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$37.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Udon" data-price="37.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/temaki.jpg" alt="temaki"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Temaki</p>
+                    <p class="text-sm">Enrolado de alga em forma de cone recheado com arroz, salmão, cream cheese e
+                        cebolinha.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$26.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Temaki" data-price="26.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/tempura.jpg" alt="tempura"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Tempurá de Camarão</p>
+                    <p class="text-sm">Porção de camarão empanado (acompanha molho especial).</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$28.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Tempurá de Camarão"
+                            data-price="28.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/harumaki.jpg" alt="bolinho primavera"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Bolinho Primavera</p>
+                    <p class="text-sm">Porção de bolinho primavera recheado com queijo.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$20.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bolinho Primavera"
+                            data-price="20.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/sashimi.jpg" alt="sashimi"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Sashimi</p>
+                    <p class="text-sm">Fatias de peixe cru perfeitamente cortadas e organizadas no prato.</p>
+
+                    <div class="flex items-center justify-between gap-2 mt-3">
+                        <p>R$25.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sashimi" data-price="25.90">
+
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+    </section>
 
 </body>
 
