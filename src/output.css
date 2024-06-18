@@ -782,10 +782,6 @@ video {
   margin-top: 2.25rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -2119,6 +2115,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-px {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2509,6 +2510,10 @@ video {
 
 .outline-double {
   outline-style: double;
+}
+
+.outline-1 {
+  outline-width: 1px;
 }
 
 .ring {

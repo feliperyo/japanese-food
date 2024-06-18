@@ -66,11 +66,11 @@ function updateCartModal() {
 
         cartItemElement.innerHTML = `
         
-        <div>
-            <div class="flex items-center justify-between">
+        <div class="mb-2">
+            <div class="flex items-center justify-between outline outline-1 rounded px-5 py-2">
                 <p class="font-medium">${item.name}</p>
                 <p>Qtd: ${item.quantity}</p>
-                <p class="font-medium mt-2">R$ ${item.price.toFixed(2)}</p>
+                <p class="font-medium">R$ ${item.price.toFixed(2)}</p>
 
                 <button class="remove-from-cart-btn" data-name='${item.name}'>Remover</button>
             </div>
