@@ -7,19 +7,9 @@
 
     <link rel="shortcut icon" href="./assets/icon-img.png" type="image/png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Japanese Food">
@@ -27,305 +17,27 @@
     <meta property="og:description" content="A melhor comida japonesa da região">
     <meta property="og:site_name" content="Japanese Food">
 
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
 
-    <title>Cardápio Japanese Food</title>
+    <title>Japanese Food</title>
 </head>
 
 <body>
 
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div id="welcome-bg"></div>
 
-        <div class="w-full h-full flex flex-col justify-center items-center">
+    <main>
 
-            <img src="./assets/hot-roll.jpg" alt="logo"
-                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+        <h1>Japanese <span>food</span></h1>
 
-            <h1 class="text-4xl mt-4 mb-2 from-stone-400">Japanese <span>food</span></h1>
+        <p>Os melhores sabores de comida Japonesa
+            <br>a um clique de distância.
+        </p>
 
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <p class="text-white font-medium">Seg à Dom - 18h as 22h</p>
-            </div>
+        <a href="./menu.html">Abrir cardápio</a>
 
-        </div>
-    </header>
-
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nossos pratos</h2>
-
-    <section id="menu">
-
-        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-
-            <div class="flex gap-2">
-                <img src="./assets/sushi.jpg" alt="sushi"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Sushi</p>
-                    <p class="text-sm">Feito com arroz temperado com molho de vinagre, açúcar e sal, combinado com peixe
-                        ou fruto do
-                        mar, vegetais ou ovo.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$28.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sushi" data-price="28.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/hot-roll.jpg" alt="hot roll"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Hot Roll</p>
-                    <p class="text-sm">O hot roll é o sushi empanado, feito com peixe salmão ou atum, enrolados com
-                        arroz em nori.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$32.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hot Roll"
-                            data-price="32.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/yakissoba.jpg" alt="yakissoba"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Yakissoba</p>
-                    <p class="text-sm">Macarrão, preparado em um refogado de carnes e legumes, em um molho denso e
-                        concentrado com tons adocicados.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$37.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Yakissoba"
-                            data-price="37.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/udon.jpg" alt="udon"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Udon</p>
-                    <p class="text-sm">Macarrão tipo Udon coberto com cebolinha, ovo cozido e camarão na sopa
-                        quente.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$37.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Udon" data-price="37.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/temaki.jpg" alt="temaki"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Temaki</p>
-                    <p class="text-sm">Enrolado de alga em forma de cone recheado com arroz, salmão, cream cheese e
-                        cebolinha.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$26.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Temaki" data-price="26.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/tempura.jpg" alt="tempura"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Tempurá de Camarão</p>
-                    <p class="text-sm">Porção de camarão empanado (acompanha molho especial).</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$28.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Tempurá de Camarão"
-                            data-price="28.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/harumaki.jpg" alt="bolinho primavera"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Bolinho Primavera</p>
-                    <p class="text-sm">Porção de bolinho primavera recheado com queijo.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$20.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Bolinho Primavera"
-                            data-price="20.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2">
-                <img src="./assets/sashimi.jpg" alt="sashimi"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div>
-                    <p class="font-bold">Sashimi</p>
-                    <p class="text-sm">Fatias de peixe cru perfeitamente cortadas e organizadas no prato.</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$25.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sashimi" data-price="25.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-        </main>
-
-
-        <div class="mx-auto max-w-7xl px-2 my-2">
-            <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Bebidas</h2>
-        </div>
-
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"
-            id="menu">
-
-            <div class="flex gap-2 w-full">
-                <img src="./assets/refri-1.png" alt="coca-cola"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div class="w-full">
-                    <p class="font-bold">Coca-Cola Lata</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$5.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola Lata"
-                            data-price="5.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2 w-full">
-                <img src="./assets/refri-2.png" alt="guarana"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div class="w-full">
-                    <p class="font-bold">Guaraná Lata</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$5.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaraná Lata"
-                            data-price="5.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex gap-2 w-full">
-                <img src="./assets/refri-3.jpg" alt="sukita"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
-
-                <div class="w-full">
-                    <p class="font-bold">Sukita Lata</p>
-
-                    <div class="flex items-center justify-between gap-2 mt-3">
-                        <p>R$5.90</p>
-                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sukita Lata"
-                            data-price="5.90">
-
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <div class="bg-black/75 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
-        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
-            <h2 class="text-center font-bold text-2xl mb-2">Carrinho</h2>
-
-            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
-
-            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
-
-            <p class="font-bold mt-4">Endereço de entrega:</p>
-            <input type="text" placeholder="Digite seu endereço completo..." id="address"
-                class="w-full border-2 p-1 rounded my-1">
-
-            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
-
-            <div class="flex items-center justify-between mt-5 w-full">
-                <button id="close-modal-btn" class="bg-red-500 text-white px-4 py-1 rounded">Voltar</button>
-                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
-            </div>
-
-        </div>
-    </div>
-
-
-    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-
-        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
-            (<span id="cart-count">0</span>)
-            Veja seu carrinho
-            <i class="fa fa-cart-plus text-lg text-white"></i>
-        </button>
-
-    </footer>
+    </main>
 
 </body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-<script src="./scripts.js"></script>
 
 </html>
